@@ -16,12 +16,11 @@ jobs:
       - name: Generate snake
         uses: Platane/snk@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: CoreCoderX
           outputs: |
-            dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=#E07355&color_dots=#1C1C1E,#7A3428,#B94E35,#E07355,#FFF5F0
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#E07355&color_dots=#1C1C1E,#7A3428,#B94E35,#E07355,#FFF5F0
+            dist/github-contribution-grid-snake.svg?color_snake=%23E07355&color_dots=%231C1C1E,%237A3428,%23B94E35,%23E07355,%23FFF5F0
 
-      - name: Publish to output branch
+      - name: Publish snake
         uses: crazy-max/ghaction-github-pages@v4
         with:
           build_dir: dist
