@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 200" width="100%">
+  <title>Sivaprakash CoreCoderX Developer Banner</title>
+  <desc>Developer profile banner for Sivaprakash, CoreCoderX, CS student building backend systems, AI infrastructure and security tools from Chennai India.</desc>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
+    @keyframes pulseR  { 0%,100%{opacity:.5} 50%{opacity:1} }
+    @keyframes pulseY  { 0%,100%{opacity:.5} 50%{opacity:1} }
+    @keyframes pulseG  { 0%,100%{opacity:.5} 50%{opacity:1} }
+    @keyframes blink   { 0%,100%{opacity:1} 50%{opacity:0} }
+    @keyframes fadeUp  { from{opacity:0;transform:translateY(7px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes drawLine{ from{stroke-dashoffset:820} to{stroke-dashoffset:0} }
+
+    .dot-r  { animation: pulseR 2.4s ease-in-out 0s    infinite; }
+    .dot-y  { animation: pulseY 2.4s ease-in-out .5s   infinite; }
+    .dot-g  { animation: pulseG 2.4s ease-in-out 1.0s  infinite; }
+    .cursor { animation: blink 1s step-end infinite; fill: #E07355; }
+    .f1 { opacity:0; animation: fadeUp .6s ease-out .1s  forwards; }
+    .f2 { opacity:0; animation: fadeUp .6s ease-out .3s  forwards; }
+    .f3 { opacity:0; animation: fadeUp .6s ease-out .55s forwards; }
+    .ln { stroke-dasharray:820; stroke-dashoffset:820; animation: drawLine 1s ease-out .15s forwards; }
+
+    .c-or  { fill: #E07355; }
+    .c-dk  { fill: #1C1C1E; }
+    .c-mt  { fill: #6B7280; }
+    .s-bd  { stroke: #E5E7EB; }
+
+    @media (prefers-color-scheme: dark) {
+      .c-dk { fill: #F0F0EC; }
+      .c-mt { fill: #9CA3AF; }
+      .s-bd { stroke: #2D333B; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *,*::before,*::after { animation-duration:.001ms !important; animation-iteration-count:1 !important; opacity:1 !important; transform:none !important; }
+    }
+  </style>
+
+  <rect x="2" y="2" width="846" height="196" rx="10" fill="none" class="s-bd" stroke-width="1"/>
+
+  <!-- macOS 3-dot traffic lights + top bar -->
+  <g class="f1">
+    <circle cx="22" cy="28" r="5" fill="#FF5F57" class="dot-r"/>
+    <circle cx="38" cy="28" r="5" fill="#FFBD2E" class="dot-y"/>
+    <circle cx="54" cy="28" r="5" fill="#27C93F" class="dot-g"/>
+    <text x="74" y="33" class="mono c-mt" font-size="12" font-weight="600">~/CoreCoderX</text>
+    <text x="190" y="33" class="mono c-mt" font-size="12"> | </text>
+    <text x="204" y="33" class="mono c-mt" font-size="12">Sivaprakash</text>
+    <text x="304" y="33" class="mono c-mt" font-size="12"> | </text>
+    <text x="318" y="33" class="mono c-mt" font-size="12">CSE Student @ AIHT</text>
+    <text x="820" y="33" class="mono c-or" font-size="11" text-anchor="end">Profile</text>
+  </g>
+
+  <line x1="16" y1="50" x2="834" y2="50" class="s-bd ln" stroke-width="1"/>
+
+  <g class="f2">
+    <text x="40" y="108" class="mono" font-size="36" font-weight="700">
+      <tspan class="c-or">&gt; </tspan><tspan class="c-dk">Sivaprakash</tspan>
+    </text>
+    <text x="40" y="140" class="mono c-mt" font-size="14">
+      <tspan class="c-or">$</tspan><tspan> Backend Systems</tspan><tspan class="c-or"> · </tspan><tspan>AI Infrastructure</tspan><tspan class="c-or"> · </tspan><tspan>Security Tooling</tspan><tspan class="cursor"> _</tspan>
+    </text>
+  </g>
+
+  <line x1="16" y1="158" x2="834" y2="158" class="s-bd" stroke-width="1"/>
+
+  <g class="f3">
+    <text x="40" y="181" class="mono c-mt" font-size="11">
+      <tspan>Architecture: </tspan><tspan class="c-dk">Enterprise-grade</tspan>
+    </text>
+    <text x="310" y="181" class="mono c-mt" font-size="11">
+      <tspan>Method: </tspan><tspan class="c-or">Learn</tspan><tspan> -&gt; </tspan><tspan class="c-or">Build</tspan><tspan> -&gt; </tspan><tspan class="c-or">Improve</tspan>
+    </text>
+    <text x="810" y="181" class="mono c-mt" font-size="11" text-anchor="end">Chennai, TN, India</text>
+  </g>
+</svg>
