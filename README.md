@@ -86,7 +86,11 @@ The part of AI applications most people skip: the infrastructure. An offline-fir
 ## Contribution Graph
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/CoreCoderX/CoreCoderX/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Grid Snake" width="100%" />
+  <img
+    src="https://raw.githubusercontent.com/CoreCoderX/CoreCoderX/gh-pages/github-contribution-grid-snake.svg"
+    alt="GitHub Contribution Grid Snake"
+    width="100%"
+  />
 </p>
 
 ---
