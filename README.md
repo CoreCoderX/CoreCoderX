@@ -10,6 +10,12 @@
 
 ---
 
+## Sivaprakash — CoreCoderX
+
+Software developer and Computer Science Engineering student building AI applications, LLM infrastructure, backend systems, developer tools, and security tooling. Known on GitHub as [@CoreCoderX](https://github.com/CoreCoderX), working primarily with Java, Spring Boot, TypeScript, React, Python, Node.js, FastAPI, Docker, MySQL, PostgreSQL, Redis and More.
+
+---
+
 ## Engineering Lifecycle
 
 <p align="center">
