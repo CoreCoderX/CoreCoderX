@@ -16,6 +16,14 @@ Software developer and Computer Science Engineering student building AI applicat
 
 ---
 
+<p align="center">
+  <img src="assets/system-status.svg" alt="Terminal status panel showing CoreCoderX's current profile focus: backend systems active, AI infrastructure evolving, security tooling guarded, and a continuous learning loop running" width="100%" />
+</p>
+
+<p align="center"><sub>Current profile themes — what I build and study, not production services.</sub></p>
+
+---
+
 ## Engineering Lifecycle
 
 <p align="center">
@@ -73,6 +81,10 @@ The part of AI applications most people skip: the infrastructure. An offline-fir
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-1C1C1E?style=flat-square&logo=typescript&logoColor=E07355) ![GNU Bash](https://img.shields.io/badge/CLI%20%2F%20TUI-1C1C1E?style=flat-square&logo=gnubash&logoColor=E07355) ![AI Infrastructure](https://img.shields.io/badge/AI%20Infrastructure-1C1C1E?style=flat-square) ![Local-First](https://img.shields.io/badge/Local--First%20Cache-1C1C1E?style=flat-square) ![Provider Routing](https://img.shields.io/badge/Provider%20Routing-1C1C1E?style=flat-square)
 
+<p align="center">
+  <img src="assets/project-signal.svg" alt="Project signal list of the four selected repositories: ZenXChat, BankBackendApp, Keymontr, and ZenXHub in active development" width="100%" />
+</p>
+
 ---
 
 ## How I Think
@@ -86,6 +98,10 @@ The part of AI applications most people skip: the infrastructure. An offline-fir
 | **05. IMPROVE** | **Feedback Loop** | `BUILD` &nbsp;&rarr;&nbsp; `BREAK` &nbsp;&rarr;&nbsp; `UNDERSTAND` &nbsp;&rarr;&nbsp; `REBUILD` |
 
 > *"Don't just use the system. Understand the system."*
+
+<p align="center">
+  <img src="assets/engineering-loop.svg" alt="Five-phase engineering loop: think, build, break, understand, improve, with a dashed rebuild path returning to the start" width="100%" />
+</p>
 
 ---
 
