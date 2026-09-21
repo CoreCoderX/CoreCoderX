@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 200" width="100%">
   <title>Sivaprakash CoreCoderX Developer Banner</title>
-  <desc>Developer profile banner for Sivaprakash, CoreCoderX, CS student building backend systems, AI infrastructure and security tools from Chennai India.</desc>
+  <desc>Developer profile banner for Sivaprakash, CoreCoderX, CS student building backend systems, AI infrastructure and security tools from Chennai India. Dark-theme variant.</desc>
 
   <style>
     .mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
@@ -22,9 +22,9 @@
     .ln { stroke-dasharray:820; stroke-dashoffset:820; animation: drawLine 1s ease-out .15s forwards; }
 
     .c-or  { fill: #E07355; }
-    .c-dk  { fill: #1C1C1E; }
-    .c-mt  { fill: #6B7280; }
-    .s-bd  { stroke: #E5E7EB; }
+    .c-dk  { fill: #F0F0EC; }
+    .c-mt  { fill: #9CA3AF; }
+    .s-bd  { stroke: #2D333B; }
 
     @media (prefers-reduced-motion: reduce) {
       *,*::before,*::after { animation-duration:.001ms !important; animation-iteration-count:1 !important; opacity:1 !important; transform:none !important; }

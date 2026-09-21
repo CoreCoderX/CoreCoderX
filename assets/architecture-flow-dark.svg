@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 148" width="100%">
   <title>Software Engineering Lifecycle - CoreCoderX</title>
-  <desc>Four-phase software engineering workflow: Requirement Analysis, System Design, Implementation, and Iteration. The general process used by Sivaprakash CoreCoderX for building reliable software systems.</desc>
+  <desc>Four-phase software engineering workflow: Requirement Analysis, System Design, Implementation, and Iteration. The general process used by Sivaprakash CoreCoderX for building reliable software systems. Dark-theme variant.</desc>
 
   <style>
     .mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
@@ -16,9 +16,9 @@
 
     .or  { fill: #E07355; }
     .bl  { fill: #4B7CF3; }
-    .dk  { fill: #1C1C1E; }
-    .mt  { fill: #6B7280; }
-    .bd  { stroke: #E5E7EB; }
+    .dk  { fill: #E5E7EB; }
+    .mt  { fill: #9CA3AF; }
+    .bd  { stroke: #2D333B; }
 
     @media (prefers-reduced-motion: reduce) {
       *,*::before,*::after { animation-duration:.001ms !important; stroke-opacity:1 !important; }
