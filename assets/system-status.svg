@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 176" width="100%">
+  <title>Profile Status Panel - CoreCoderX</title>
+  <desc>Terminal status panel listing the current focus areas of the CoreCoderX profile: backend systems, AI infrastructure, security tooling, and a continuous learning loop. Profile themes, not production metrics.</desc>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
+    @keyframes pulse  { 0%,100%{opacity:.4} 50%{opacity:1} }
+    @keyframes blink  { 0%,100%{opacity:1} 50%{opacity:0} }
+    @keyframes scanY  { from{transform:translateY(0)} to{transform:translateY(96px)} }
+
+    .dot { animation: pulse 3s ease-in-out infinite; }
+    .d2  { animation-delay: .75s; }
+    .d3  { animation-delay: 1.5s; }
+    .d4  { animation-delay: 2.25s; }
+    .cursor { animation: blink 1.1s step-end infinite; fill: #E07355; }
+    .scan { animation: scanY 8s ease-in-out infinite alternate; }
+
+    .or  { fill: #E07355; }
+    .bl  { fill: #4B7CF3; }
+    .grn { fill: #27C93F; }
+    .amb { fill: #FFBD2E; }
+    .dk  { fill: #1C1C1E; }
+    .mt  { fill: #6B7280; }
+    .bd  { stroke: #E5E7EB; }
+
+    @media (prefers-color-scheme: dark) {
+      .dk { fill: #E5E7EB; }
+      .mt { fill: #9CA3AF; }
+      .bd { stroke: #2D333B; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .dot, .cursor, .scan { animation: none !important; }
+    }
+  </style>
+
+  <rect x="2" y="2" width="846" height="172" rx="10" fill="none" class="bd" stroke-width="1"/>
+
+  <!-- Terminal chrome -->
+  <circle cx="22" cy="28" r="5" fill="#FF5F57"/>
+  <circle cx="38" cy="28" r="5" fill="#FFBD2E"/>
+  <circle cx="54" cy="28" r="5" fill="#27C93F"/>
+  <text x="74" y="33" class="mono mt" font-size="12" font-weight="600">~/corecoderx</text>
+  <text x="192" y="33" class="mono mt" font-size="12">status --profile</text>
+  <text x="830" y="33" class="mono or" font-size="11" text-anchor="end">Profile</text>
+
+  <line x1="16" y1="50" x2="834" y2="50" class="bd" stroke-width="1"/>
+
+  <!-- Slow scan line across the body -->
+  <line x1="16" y1="60" x2="834" y2="60" stroke="#E07355" stroke-width="1" opacity="0.12" class="scan"/>
+
+  <!-- Status rows -->
+  <g>
+    <circle cx="42" cy="77" r="4" fill="#E07355" class="dot"/>
+    <text x="60" y="81" class="mono mt" font-size="13">backend-systems</text>
+    <text x="220" y="81" class="mono or" font-size="13" font-weight="600">active</text>
+    <text x="830" y="81" class="mono mt" font-size="11" text-anchor="end">java · spring · node</text>
+  </g>
+
+  <g>
+    <circle cx="42" cy="105" r="4" fill="#4B7CF3" class="dot d2"/>
+    <text x="60" y="109" class="mono mt" font-size="13">ai-infrastructure</text>
+    <text x="220" y="109" class="mono bl" font-size="13" font-weight="600">evolving</text>
+    <text x="830" y="109" class="mono mt" font-size="11" text-anchor="end">llm · sse · cli</text>
+  </g>
+
+  <g>
+    <circle cx="42" cy="133" r="4" fill="#27C93F" class="dot d3"/>
+    <text x="60" y="137" class="mono mt" font-size="13">security-tooling</text>
+    <text x="220" y="137" class="mono grn" font-size="13" font-weight="600">guarded</text>
+    <text x="830" y="137" class="mono mt" font-size="11" text-anchor="end">patterns · detection</text>
+  </g>
+
+  <g>
+    <circle cx="42" cy="161" r="4" fill="#FFBD2E" class="dot d4"/>
+    <text x="60" y="165" class="mono mt" font-size="13">learning-loop</text>
+    <text x="220" y="165" class="mono amb" font-size="13" font-weight="600">running <tspan class="cursor">_</tspan></text>
+    <text x="830" y="165" class="mono mt" font-size="11" text-anchor="end">learn · build · improve</text>
+  </g>
+</svg>

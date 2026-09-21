@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 170" width="100%">
+  <title>Five-Phase Engineering Loop - CoreCoderX</title>
+  <desc>Compact visual of the five-phase engineering loop used by Sivaprakash CoreCoderX: think, build, break, understand, improve, with a dashed rebuild path returning from improve back to think. Derived from the How I Think section of the profile.</desc>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
+    @keyframes nodePulse { 0%,100%{stroke-opacity:.3} 50%{stroke-opacity:1} }
+    @keyframes flowMove  { 0%{stroke-dashoffset:20} 100%{stroke-dashoffset:0} }
+
+    .n1 { stroke: #E07355; animation: nodePulse 5s ease-in-out 0s  infinite; }
+    .n2 { stroke: #4B7CF3; animation: nodePulse 5s ease-in-out 1s  infinite; }
+    .n3 { stroke: #E07355; animation: nodePulse 5s ease-in-out 2s  infinite; }
+    .n4 { stroke: #4B7CF3; animation: nodePulse 5s ease-in-out 3s  infinite; }
+    .n5 { stroke: #E07355; animation: nodePulse 5s ease-in-out 4s  infinite; }
+    .flow { stroke-dasharray: 5 5; animation: flowMove 1.4s linear infinite; }
+
+    .or  { fill: #E07355; }
+    .bl  { fill: #4B7CF3; }
+    .dk  { fill: #1C1C1E; }
+    .mt  { fill: #6B7280; }
+    .bd  { stroke: #E5E7EB; }
+
+    @media (prefers-color-scheme: dark) {
+      .dk { fill: #E5E7EB; }
+      .mt { fill: #9CA3AF; }
+      .bd { stroke: #2D333B; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .n1, .n2, .n3, .n4, .n5, .flow { animation: none !important; }
+    }
+  </style>
+
+  <rect x="2" y="2" width="846" height="166" rx="8" fill="none" class="bd" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Panel header -->
+  <text x="20" y="24" class="mono mt" font-size="11" font-weight="600">~/how-i-think</text>
+  <text x="830" y="24" class="mono mt" font-size="11" text-anchor="end">5-phase feedback loop</text>
+
+  <!-- Phase nodes -->
+  <g>
+    <rect x="49" y="38" width="124" height="58" rx="7" fill="none" stroke-width="1.2" class="n1"/>
+    <text x="61" y="56" class="mono mt" font-size="10">01</text>
+    <text x="61" y="80" class="mono dk" font-size="13" font-weight="700">THINK</text>
+  </g>
+
+  <line x1="177" y1="67" x2="196" y2="67" stroke="#E07355" stroke-width="1.4" class="flow"/>
+  <polygon points="196,63.5 204,67 196,70.5" fill="#E07355"/>
+
+  <g>
+    <rect x="206" y="38" width="124" height="58" rx="7" fill="none" stroke-width="1.2" class="n2"/>
+    <text x="218" y="56" class="mono mt" font-size="10">02</text>
+    <text x="218" y="80" class="mono dk" font-size="13" font-weight="700">BUILD</text>
+  </g>
+
+  <line x1="334" y1="67" x2="353" y2="67" stroke="#4B7CF3" stroke-width="1.4" class="flow"/>
+  <polygon points="353,63.5 361,67 353,70.5" fill="#4B7CF3"/>
+
+  <g>
+    <rect x="363" y="38" width="124" height="58" rx="7" fill="none" stroke-width="1.2" class="n3"/>
+    <text x="375" y="56" class="mono mt" font-size="10">03</text>
+    <text x="375" y="80" class="mono dk" font-size="13" font-weight="700">BREAK</text>
+  </g>
+
+  <line x1="491" y1="67" x2="510" y2="67" stroke="#E07355" stroke-width="1.4" class="flow"/>
+  <polygon points="510,63.5 518,67 510,70.5" fill="#E07355"/>
+
+  <g>
+    <rect x="520" y="38" width="124" height="58" rx="7" fill="none" stroke-width="1.2" class="n4"/>
+    <text x="532" y="56" class="mono mt" font-size="10">04</text>
+    <text x="532" y="80" class="mono dk" font-size="13" font-weight="700">UNDERSTAND</text>
+  </g>
+
+  <line x1="648" y1="67" x2="667" y2="67" stroke="#4B7CF3" stroke-width="1.4" class="flow"/>
+  <polygon points="667,63.5 675,67 667,70.5" fill="#4B7CF3"/>
+
+  <g>
+    <rect x="677" y="38" width="124" height="58" rx="7" fill="none" stroke-width="1.2" class="n5"/>
+    <text x="689" y="56" class="mono mt" font-size="10">05</text>
+    <text x="689" y="80" class="mono dk" font-size="13" font-weight="700">IMPROVE</text>
+  </g>
+
+  <!-- Rebuild path back to THINK -->
+  <path d="M 739 96 L 739 132 L 111 132 L 111 105" fill="none" stroke="#E07355" stroke-width="1.4" class="flow"/>
+  <polygon points="107,105 111,99 115,105" fill="#E07355"/>
+  <text x="425" y="126" class="mono mt" font-size="11" text-anchor="middle">rebuild</text>
+</svg>
