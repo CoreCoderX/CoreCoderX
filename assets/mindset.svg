@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="192" viewBox="0 0 1000 192" role="img" aria-labelledby="title desc">
+  <title id="title">Think. Build. Break. Understand. Improve.</title>
+  <desc id="desc">Five illustrated stations connected by an animated feedback loop: a light bulb, building blocks, a lightning bolt, a magnifying glass, and a growing plant.</desc>
+  <style>
+    text { font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif; fill: #182333; }
+    .ink { fill: none; stroke: #182333; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .route { fill: none; stroke: #91abc9; stroke-width: 2; stroke-dasharray: 4 7; animation: loop 3s linear infinite; }
+    .halo { animation: halo 10s ease-in-out infinite; }
+    .s2 { animation-delay: -8s; } .s3 { animation-delay: -6s; } .s4 { animation-delay: -4s; } .s5 { animation-delay: -2s; }
+    @keyframes loop { to { stroke-dashoffset: -44; } }
+    @keyframes halo { 0%,15%,100% { fill: #b6cbe0; } 22%,92% { fill: #e8edf1; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <rect width="1000" height="192" rx="32" fill="#f6f3eb"/>
+  <rect x="12" y="12" width="976" height="168" rx="20" fill="none" stroke="#182333" stroke-width="2"/>
+  <path class="route" d="M130 71H906a44.5 44.5 0 0 1 0 89H94a44.5 44.5 0 0 1 0-89Z"/>
+  <g fill="none" stroke="#607da5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m219 66 6 5-6 5m185-10 6 5-6 5m185-10 6 5-6 5m185-10 6 5-6 5M786 155l-6 5 6 5M226 155l-6 5 6 5"/></g>
+  <g stroke="#182333" stroke-width="2"><circle class="halo" cx="130" cy="71" r="33" fill="#e8edf1"/><circle class="halo s2" cx="315" cy="71" r="33" fill="#e8edf1"/><circle class="halo s3" cx="500" cy="71" r="33" fill="#e8edf1"/><circle class="halo s4" cx="685" cy="71" r="33" fill="#e8edf1"/><circle class="halo s5" cx="870" cy="71" r="33" fill="#e8edf1"/></g>
+  <g class="ink">
+    <path d="M121 79c-15-14-4-31 9-31s24 17 9 31v7h-18Zm0 0h18m-16 14h14m-7-31v16"/>
+    <path d="M297 72h18v18h-18zM315 72h18v18h-18zM306 54h18v18h-18z" fill="#f6f3eb"/>
+    <path d="m503 49-19 25h15l-3 20 20-28h-15Z" fill="#607da5"/>
+    <circle cx="681" cy="66" r="13" fill="#f6f3eb"/><path d="m691 76 13 14m-28-28h10m-10 7h6"/>
+    <path d="M870 88V59m0 14c-16 1-20-15-20-15 16-3 23 11 20 15Zm0-9c15 1 20-15 20-15-17-2-22 11-20 15Z" fill="#91a99f"/>
+    <path d="M854 90h32"/>
+  </g>
+  <g text-anchor="middle" font-size="16" font-weight="700" letter-spacing="1"><text x="130" y="130">THINK</text><text x="315" y="130">BUILD</text><text x="500" y="130">BREAK</text><text x="685" y="130">UNDERSTAND</text><text x="870" y="130">IMPROVE</text></g>
+  <path fill="#f6f3eb" d="M374 147h252v24H374z"/>
+  <text x="500" y="164" text-anchor="middle" font-size="11" letter-spacing="2" fill="#526579">THE LOOP IS THE POINT.</text>
+</svg>

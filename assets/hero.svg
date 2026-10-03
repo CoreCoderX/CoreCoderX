@@ -1,71 +1,122 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 200" width="100%">
-  <title>Sivaprakash CoreCoderX Developer Banner</title>
-  <desc>Developer profile banner for Sivaprakash, CoreCoderX, CS student building backend systems, AI infrastructure and security tools from Chennai India.</desc>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img" aria-labelledby="title desc">
+  <title id="title">CoreCoderX — The Builder's Studio</title>
+  <desc id="desc">Sivaprakash's illustrated studio in ivory, ink, and slate blue. A headphone-wearing cat sits beside a system diagram, books, a plant, and gently steaming coffee. Curiosity in. Thoughtful systems out.</desc>
+  <defs>
+    <pattern id="paper" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".7" fill="#182333" opacity=".075"/></pattern>
+    <clipPath id="window"><rect x="622" y="62" width="320" height="235" rx="110"/></clipPath>
+  </defs>
   <style>
-    .mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-
-    @keyframes pulseR  { 0%,100%{opacity:.5} 50%{opacity:1} }
-    @keyframes pulseY  { 0%,100%{opacity:.5} 50%{opacity:1} }
-    @keyframes pulseG  { 0%,100%{opacity:.5} 50%{opacity:1} }
-    @keyframes blink   { 0%,100%{opacity:1} 50%{opacity:0} }
-    @keyframes fadeUp  { from{opacity:0;transform:translateY(7px)} to{opacity:1;transform:translateY(0)} }
-    @keyframes drawLine{ from{stroke-dashoffset:820} to{stroke-dashoffset:0} }
-
-    .dot-r  { animation: pulseR 2.4s ease-in-out 0s    infinite; }
-    .dot-y  { animation: pulseY 2.4s ease-in-out .5s   infinite; }
-    .dot-g  { animation: pulseG 2.4s ease-in-out 1.0s  infinite; }
-    .cursor { animation: blink 1s step-end infinite; fill: #E07355; }
-    .f1 { opacity:0; animation: fadeUp .6s ease-out .1s  forwards; }
-    .f2 { opacity:0; animation: fadeUp .6s ease-out .3s  forwards; }
-    .f3 { opacity:0; animation: fadeUp .6s ease-out .55s forwards; }
-    .ln { stroke-dasharray:820; stroke-dashoffset:820; animation: drawLine 1s ease-out .15s forwards; }
-
-    .c-or  { fill: #E07355; }
-    .c-dk  { fill: #1C1C1E; }
-    .c-mt  { fill: #6B7280; }
-    .s-bd  { stroke: #E5E7EB; }
-
-    @media (prefers-reduced-motion: reduce) {
-      *,*::before,*::after { animation-duration:.001ms !important; animation-iteration-count:1 !important; opacity:1 !important; transform:none !important; }
-    }
+    text { font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif; fill: #182333; }
+    .ink { stroke: #182333; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .steam { fill: none; stroke: #607da5; stroke-width: 2.5; stroke-linecap: round; animation: steam 4s ease-in-out infinite; }
+    .steam.second { animation-delay: -2s; }
+    .leaf { transform-box: fill-box; transform-origin: bottom center; animation: sway 6s ease-in-out infinite; }
+    .signal { animation: signal 4s ease-in-out infinite; }
+    .signal.two { animation-delay: -1.3s; }
+    .signal.three { animation-delay: -2.6s; }
+    .cloud { animation: drift 12s ease-in-out infinite; }
+    .eye { transform-box: fill-box; transform-origin: center; animation: blink 7s infinite; }
+    .note { animation: note 5s ease-in-out infinite; }
+    .flow { stroke-dasharray: 5 8; animation: flow 3s linear infinite; }
+    @keyframes steam { 0%,100% { transform: translateY(2px); opacity: .35; } 50% { transform: translateY(-7px); opacity: .9; } }
+    @keyframes sway { 0%,100% { transform: rotate(-3deg); } 50% { transform: rotate(4deg); } }
+    @keyframes signal { 0%,100% { fill: #d8e3ef; } 50% { fill: #789ac4; } }
+    @keyframes drift { 0%,100% { transform: translateX(0); } 50% { transform: translateX(15px); } }
+    @keyframes blink { 0%,43%,47%,100% { transform: scaleY(1); } 45% { transform: scaleY(.12); } }
+    @keyframes note { 0%,100% { transform: translateY(0); opacity: .65; } 50% { transform: translateY(-6px); opacity: 1; } }
+    @keyframes flow { to { stroke-dashoffset: -39; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
   </style>
 
-  <rect x="2" y="2" width="846" height="196" rx="10" fill="none" class="s-bd" stroke-width="1"/>
+  <!-- An opaque paper canvas is deliberately identical in light and dark mode. -->
+  <rect width="1000" height="460" rx="34" fill="#f6f3eb"/>
+  <rect width="1000" height="460" rx="34" fill="url(#paper)"/>
+  <rect x="12" y="12" width="976" height="436" rx="22" fill="none" stroke="#182333" stroke-width="2"/>
+  <path d="M38 58h455" stroke="#c9ced0"/>
+  <circle cx="46" cy="39" r="5" fill="#607da5"/>
+  <text x="62" y="44" font-size="12" font-weight="700" letter-spacing="2.6">THE BUILDER'S STUDIO</text>
+  <text x="960" y="44" text-anchor="end" font-size="11" letter-spacing="2" fill="#526579">EST. IN CURIOSITY</text>
 
-  <!-- macOS 3-dot traffic lights + top bar -->
-  <g class="f1">
-    <circle cx="22" cy="28" r="5" fill="#FF5F57" class="dot-r"/>
-    <circle cx="38" cy="28" r="5" fill="#FFBD2E" class="dot-y"/>
-    <circle cx="54" cy="28" r="5" fill="#27C93F" class="dot-g"/>
-    <text x="74" y="33" class="mono c-mt" font-size="12" font-weight="600">~/CoreCoderX</text>
-    <text x="190" y="33" class="mono c-mt" font-size="12"> | </text>
-    <text x="204" y="33" class="mono c-mt" font-size="12">Sivaprakash</text>
-    <text x="304" y="33" class="mono c-mt" font-size="12"> | </text>
-    <text x="318" y="33" class="mono c-mt" font-size="12">CSE Student @ AIHT</text>
-    <text x="820" y="33" class="mono c-or" font-size="11" text-anchor="end">Profile</text>
+  <text x="48" y="148" font-size="64" font-weight="800" letter-spacing="-3">CoreCoder<tspan fill="#607da5">X</tspan></text>
+  <path d="M51 164c95 7 192-6 302 0" fill="none" stroke="#91abc9" stroke-width="5" stroke-linecap="round"/>
+  <text x="50" y="205" font-size="23" font-weight="700">Hey, I'm Sivaprakash.</text>
+  <text x="50" y="253" font-size="28" letter-spacing="-.6">Curiosity in.</text>
+  <text x="50" y="290" font-size="28" letter-spacing="-.6">Thoughtful systems out.</text>
+  <g font-size="11" font-weight="700" letter-spacing="1.3" text-anchor="middle">
+    <rect x="50" y="326" width="109" height="32" rx="16" fill="#e0e7ee" stroke="#182333" stroke-width="1.5"/>
+    <text x="104" y="347">BACKEND</text>
+    <rect x="169" y="326" width="130" height="32" rx="16" fill="#e0e7ee" stroke="#182333" stroke-width="1.5"/>
+    <text x="234" y="347">AI SYSTEMS</text>
+    <rect x="309" y="326" width="92" height="32" rx="16" fill="#e0e7ee" stroke="#182333" stroke-width="1.5"/>
+    <text x="355" y="347">TOOLS</text>
   </g>
 
-  <line x1="16" y1="50" x2="834" y2="50" class="s-bd ln" stroke-width="1"/>
+  <!-- The arched studio window, with a slow-moving cloud. -->
+  <g clip-path="url(#window)">
+    <rect x="622" y="62" width="320" height="235" fill="#dfe8ef"/>
+    <circle cx="867" cy="111" r="24" fill="#f6f3eb" stroke="#182333" stroke-width="2"/>
+    <path class="cloud" d="M657 116c-11-15 8-27 19-18 4-23 39-20 40 3 20-6 28 15 12 19h-71" fill="#f6f3eb" stroke="#a4b7cb" stroke-width="2"/>
+    <path d="m613 247 76-94 58 70 51-53 91 87 66-46v100H613z" fill="#b6c6d6" stroke="#182333" stroke-width="2"/>
+    <path d="m689 153 5 104 53-34zM798 170l9 93 82-6z" fill="#91a8c0"/>
+    <path d="M782 62v235M622 253h320" stroke="#182333" stroke-width="3"/>
+  </g>
+  <rect x="622" y="62" width="320" height="235" rx="110" fill="none" class="ink"/>
 
-  <g class="f2">
-    <text x="40" y="108" class="mono" font-size="36" font-weight="700">
-      <tspan class="c-or">&gt; </tspan><tspan class="c-dk">Sivaprakash</tspan>
-    </text>
-    <text x="40" y="140" class="mono c-mt" font-size="14">
-      <tspan class="c-or">$</tspan><tspan> Backend Systems</tspan><tspan class="c-or"> &#183; </tspan><tspan>AI Infrastructure</tspan><tspan class="c-or"> &#183; </tspan><tspan>Security Tooling</tspan><tspan class="cursor"> _</tspan>
-    </text>
+  <!-- Books and a little plant on the shelf. -->
+  <g class="ink">
+    <path d="M803 188v-46h15v46" fill="#607da5"/>
+    <path d="M820 188v-55h17v55" fill="#f6f3eb"/>
+    <path d="m843 189-8-42 15-3 8 42" fill="#94abc6"/>
+    <path d="M807 150h7m10 27h9m-9-27h9" fill="none" stroke-width="2"/>
+    <path d="M884 174v-42" fill="none"/>
+    <g class="leaf" fill="#91a99f"><path d="M884 152c-25 0-26-26-26-26 24 0 29 14 26 26Z"/><path d="M884 143c22-1 25-25 25-25-24 0-27 13-25 25Z"/></g>
+    <path d="m868 165 5 23h24l5-23Z" fill="#f6f3eb"/>
+    <path d="M796 190h121v9H796z" fill="#f6f3eb"/>
   </g>
 
-  <line x1="16" y1="158" x2="834" y2="158" class="s-bd" stroke-width="1"/>
-
-  <g class="f3">
-    <text x="40" y="181" class="mono c-mt" font-size="11">
-      <tspan>Architecture: </tspan><tspan class="c-dk">Enterprise-grade</tspan>
-    </text>
-    <text x="310" y="181" class="mono c-mt" font-size="11">
-      <tspan>Method: </tspan><tspan class="c-or">Learn</tspan><tspan> -&gt; </tspan><tspan class="c-or">Build</tspan><tspan> -&gt; </tspan><tspan class="c-or">Improve</tspan>
-    </text>
-    <text x="810" y="181" class="mono c-mt" font-size="11" text-anchor="end">Chennai, TN, India</text>
+  <!-- A diagram, rather than another terminal window. -->
+  <g class="ink">
+    <rect x="723" y="221" width="211" height="129" rx="9" fill="#182333"/>
+    <rect x="732" y="230" width="193" height="107" rx="4" fill="#f6f3eb" stroke="none"/>
+    <path d="M812 350v22h35v-22M795 375h68" fill="#a4b7cb"/>
+    <path class="flow" d="M771 278h47m0 0v-20h49m-49 20v30h49" fill="none" stroke="#607da5" stroke-width="2"/>
+    <rect class="signal" x="751" y="260" width="31" height="34" rx="7" fill="#d8e3ef" stroke-width="2"/>
+    <rect class="signal two" x="855" y="245" width="49" height="26" rx="6" fill="#d8e3ef" stroke-width="2"/>
+    <rect class="signal three" x="855" y="294" width="49" height="26" rx="6" fill="#d8e3ef" stroke-width="2"/>
   </g>
+
+  <!-- A small headphone-wearing studio companion, echoing the profile picture. -->
+  <g class="ink">
+    <path d="M567 375c-9-36 8-73 38-81h37c29 10 37 51 28 81" fill="#2e3b50"/>
+    <path d="M570 229c-9-22-5-41 1-49l30 20c17-5 34-5 49 0l29-20c8 13 8 35 1 51 21 54-1 87-55 87s-78-36-55-89Z" fill="#2e3b50"/>
+    <path d="M580 259c0-36 33-21 45-21s43-15 45 21c3 34-16 46-45 46s-47-13-45-46Z" fill="#f0e7d9" stroke-width="2.5"/>
+    <ellipse class="eye" cx="603" cy="267" rx="6" ry="10" fill="#182333" stroke="none"/>
+    <ellipse class="eye" cx="649" cy="267" rx="6" ry="10" fill="#182333" stroke="none"/>
+    <path d="m622 280 4 3 4-3m-12 10q8 8 16 0" fill="none" stroke-width="2.5"/>
+    <path d="M556 258c-9-99 141-99 137 0" fill="none" stroke-width="12"/>
+    <path d="M556 258c-9-99 141-99 137 0" fill="none" stroke="#91abc9" stroke-width="6"/>
+    <rect x="543" y="243" width="24" height="43" rx="11" fill="#607da5"/>
+    <rect x="681" y="243" width="24" height="43" rx="11" fill="#607da5"/>
+    <path d="M593 337c-2 31 18 41 43 36m19-37c10 22 37 26 57 20" fill="none" stroke-width="16"/>
+    <path d="M593 337c-2 31 18 41 43 36m19-37c10 22 37 26 57 20" fill="none" stroke="#2e3b50" stroke-width="10"/>
+  </g>
+  <g class="note" fill="none" stroke="#607da5" stroke-width="2.5" stroke-linecap="round">
+    <path d="M522 211v-17l12-3v16"/><ellipse cx="518" cy="213" rx="4" ry="3" fill="#607da5"/><ellipse cx="530" cy="209" rx="4" ry="3" fill="#607da5"/>
+  </g>
+
+  <!-- Coffee, notebook, and the desk edge. -->
+  <g class="ink">
+    <path d="M710 343h23c0 19-4 27-12 27s-11-8-11-27Z" fill="#f6f3eb"/>
+    <path d="M733 346c17-3 15 18-2 15" fill="none"/>
+    <path d="M702 372h39" fill="none" stroke-width="2"/>
+    <path d="m872 363 65 2 12 14h-76Z" fill="#91abc9"/>
+    <path d="m880 361 50 2 8 9h-58Z" fill="#f6f3eb" stroke-width="2"/>
+    <path d="M529 380h428v12H529z" fill="#c3cfda"/>
+  </g>
+  <path class="steam" d="M719 335c-10-10 9-13 0-24"/>
+  <path class="steam second" d="M729 332c-8-7 7-11 1-19"/>
+
+  <path d="M38 409h924" stroke="#c9ced0"/>
+  <text x="49" y="432" font-size="11" letter-spacing="1.8">BUILT WITH INTENTION. REFINED WITH CURIOSITY.</text>
+  <text x="951" y="432" text-anchor="end" font-size="11" letter-spacing="1.8" fill="#526579">CODE · BUILD · REPEAT</text>
 </svg>
